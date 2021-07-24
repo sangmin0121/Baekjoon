@@ -1,3 +1,3 @@
 # Baekjoon
 
-I will record my baekjoon olving process
+I will record my baekjoon solving process
