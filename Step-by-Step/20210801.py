@@ -1,37 +1,36 @@
-# # 1085
-# x, y, w, h = map(int,input().split())
-# print(min(h-y,y,x,w-x))
+# 1085
+x, y, w, h = map(int,input().split())
+print(min(h-y,y,x,w-x))
 
-# # 3009
-# from collections import Counter
-# a,b = map(int,input().split())
-# c,d = map(int,input().split())
-# e,f = map(int,input().split())
-# w_list = Counter([a,c,e])
-# h_list = Counter([b,d,f])
-# answer = []
-# for k, v in w_list.items():
-#     if v == 1:
-#         answer.append(k)
-# for k, v in h_list.items():
-#     if v == 1:
-#         answer.append(k)
-# for i in answer:
-#     print(i, end=" ")
+# 3009
+from collections import Counter
+a,b = map(int,input().split())
+c,d = map(int,input().split())
+e,f = map(int,input().split())
+w_list = Counter([a,c,e])
+h_list = Counter([b,d,f])
+answer = []
+for k, v in w_list.items():
+    if v == 1:
+        answer.append(k)
+for k, v in h_list.items():
+    if v == 1:
+        answer.append(k)
+for i in answer:
+    print(i, end=" ")
 
-# # 4153
-# while True:
-#     a,b,c = map(int,input().split())
-#     if a ==0 and b == 0 and c ==0:
-#         break
-#     total_value = [a,b,c]
-#     max_value = max(total_value)
-#     total_value.remove(max_value)
-#     if max_value**2 == sum( [i**2 for i in total_value]):
-#         print("right")
-#     else:
-#         print("wrong")
-
+# 4153
+while True:
+    a,b,c = map(int,input().split())
+    if a ==0 and b == 0 and c ==0:
+        break
+    total_value = [a,b,c]
+    max_value = max(total_value)
+    total_value.remove(max_value)
+    if max_value**2 == sum( [i**2 for i in total_value]):
+        print("right")
+    else:
+        print("wrong")
 
 # 1002
 T = int(input())
