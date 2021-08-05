@@ -26,3 +26,4 @@ for i in range(T):
         A -=1
         B +=1
 
+
