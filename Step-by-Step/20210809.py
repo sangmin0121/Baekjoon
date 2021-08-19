@@ -61,4 +61,3 @@ a2 = sorted(list(set(a)))
 dic_a2 = {a2[i]:i for i in range(len(a2))}
 print(*[dic_a2[i] for i in a])
 
-#끝
