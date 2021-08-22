@@ -1,17 +1,17 @@
-# # 15651 
-# N,M = map(int,input().split())
-# s = []
-# def dfs(): 
-#     if len(s) == M:
-#         print(" ".join(map(str,s)))
-#         return
+# 15651 
+N,M = map(int,input().split())
+s = []
+def dfs(): 
+    if len(s) == M:
+        print(" ".join(map(str,s)))
+        return
 
-#     for i in range(1,N+1):
+    for i in range(1,N+1):
         
-#         s.append(i)
-#         dfs()
-#         s.pop()
-# dfs()
+        s.append(i)
+        dfs()
+        s.pop()
+dfs()
 
 # 15652
 N,M = map(int,input().split())
